@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>View: Super Useful Web</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@charset "utf-8";
+
+/****************************************
+Standard Theme
+****************************************/
+
+/* All */
+html,body,header,main,article,nav,aside,section,footer,
+ol,ul,li,h1,h2,h3,h4,h5,h6,div,p,a,span,img {
+margin:0;
+padding:0;
+}
+
+html {
+overflow-y:scroll;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+color:#666666;
+}
+
+body {
+color:#666666;
+font:normal 100%/160% sans-serif;
+background-color:#ffffff;
+word-break:break-all;
+text-size-adjust:none;
+}
+
+header {
+background-color:#ffffff;
+}
+
+footer {
+padding-top:0;
+padding-bottom:0;
+}
+
+ol,ul,li {
+list-style-type:none;
+}
+
+header,
+main,
+footer {
+width:100%;
+margin:0 auto;
+}
+
+main {
+padding-bottom:20px;
+}
+
+main h1 {
+border:2px solid #dddddd;
+background-color:#ffffff;
+border-radius:6px;
+}
+
+main h2 {
+border-top:2px solid #dddddd;
+border-bottom:2px solid #dddddd;
+}
+
+h1,
+h2 {
+margin:20px 0 10px 0;
+padding:4px 16px;
+color:#666666;
+}
+
+main p {
+padding-bottom:20px;
+}
+
+main img {
+max-width:100%;
+}
+
+.tabgroup,
+.tbwp,
+.linklc,
+.linkwd {
+display:flex;
+flex-wrap:wrap;
+}
+
+.linklc div,
+.linkwd a {
+margin:8px 8px 8px 0;
+padding:4px 10px;
+border-radius:8px;
+border:2px solid #dddddd;
+width:108px;
+display:inline-block;
+}
+
+.lcsp {
+padding-top:0;
+}
+
+.mtsp {
+padding-top:20px;
+}
+
+.mnsp {
+padding-top:16px;
+}
+
+.linkwd {
+max-width:540px;
+display:inline-block;
+}
+
+.title,
+.btnv {
+color:#666666;
+border:2px solid #dddddd;
+}
+
+.title {
+font:normal 90%/160% sans-serif;
+outline:none;
+padding:4px 8px;
+margin:8px 8px 8px 0;
+border-radius:8px;
+}
+
+.btnv {
+padding:2px 4px;
+margin:8px 8px 8px 0;
+border-radius:8px;
+display:inline-block;
+text-decoration:underline;
+cursor:pointer;
+width:72px;
+text-align:center;
+}
+
+.srck,
+.bxcr {
+max-width:540px;
+}
+
+.srck {
+padding-top:20px;
+}
+
+.srbx {
+display:inline-block;
+}
+
+.ck {
+color:#666666;
+background-color:#ffffff;
+border-radius:8px;
+border:2px solid #dddddd;
+padding:2px 16px;
+margin:8px 8px 8px 0;
+display:inline-block;
+}
+
+input[type="file"],
+input[type="button"] {
+display:none;
+}
+
+::placeholder {
+color:#cccccc;
+}
+
+.panel {
+display:none;
+}
+
+.tab{
+overflow:hidden;
+}
+
+.tablinks{
+outline:none;
+cursor:pointer;
+padding:2px 12px;
+margin:4px 8px 4px 0;
+color:#666666;
+background-color:#ffffff;
+border-radius:8px;
+border:2px solid #dddddd;
+text-decoration:underline;
+width:48px;
+text-align:center;
+}
+
+.tab .active{
+color:#666666;
+background-color:#ffffff;
+border-radius:8px;
+border:2px solid #999999;
+text-decoration:none;
+cursor:text;
+}
+
+summary {
+color:#666666;
+padding:20px 10px 0 10px;
+border:none;
+cursor:text;
+}
+
+.cset {
+word-break:break-all;
+text-size-adjust:none;
+text-align:center;
+padding:30px 0 0 0;
+color:#666666;
+}
+
+.crby {
+color:#666666;
+font:normal 100%/160% Arial;
+background-color:#ffffff;
+text-align:center;
+}
+
+.bset {
+margin:10px auto;
+}
+
+button {
+border:2px solid #dddddd;
+border-radius:6px;
+color:#666666;
+outline:none;
+background-color:#ffffff;
+margin:0 4px;
+padding:4px 10px;
+text-decoration:underline;
+cursor:pointer;
+}
+
+.crte {
+text-align:center;
+padding:10px 0;
+color:#666666;
+}
+
+.weeks {
+font:normal 60%/160% Arial;
+padding:6px 0;
+}
+
+.tset {
+width:310px;
+display:inline-block;
+margin:10px auto;
+padding:0;
+}
+
+table {
+border-spacing:0;
+border-collapse:collapse;
+table-layout:fixed;
+width:100%;
+}
+
+td {
+border:0;
+padding:6px;
+text-align:center;
+}
+
+td:first-child,
+td:last-child {
+color:#666666;
+}
+
+td.is-disabled {
+color:#999999;
+}
+
+.today {
+padding:0;
+outline:2px solid #dddddd;
+border-radius:4px;
+}
+
+.code {
+border:2px solid #dddddd;
+padding:2px 16px;
+margin:8px 8px 8px 0;
+border-radius:8px;
+display:inline-block;
+}
+
+.code p {
+padding-bottom:0;
+}
+
+input[type=radio] {
+display:none;
+}
+
+.rlab {
+position:relative;
+margin:8px 8px 8px 0;
+padding:4px 4px 4px 36px;
+width:72px;
+display:inline-block;
+border:2px solid #dddddd;
+border-radius:8px;
+}
+
+.rlab:after, .rlab:before {
+position:absolute;
+content:"";
+display:block;
+top:50%;
+}
+
+.rlab:after {
+left:10px;
+margin-top:-10px;
+width:16px;
+height:16px;
+border:2px solid #cccccc;
+border-radius:50%;
+}
+
+.rlab:before {
+left:15px;
+margin-top:-5px;
+width:10px;
+height:10px;
+background:#cccccc;
+border-radius:50%;
+opacity:0;
+}
+
+input[type=radio]:checked + .rlab:before {
+opacity:1;
+}
+
+.rlab:hover:after {
+border-color:#cccccc;
+}
+
+.info {
+border:2px solid #dddddd;
+color:#666666;
+padding:2px 16px;
+margin:8px 8px 8px 0;
+border-radius:8px;
+display:inline-block;
+}
+
+/* Small */
+@media screen and (max-width:480px){
+
+body {
+background-color:#ffffff;
+}
+
+h1,
+h2 {
+font:bold 100%/160% sans-serif;
+}
+
+header,
+main,
+footer {
+box-sizing:border-box;
+padding-right:10px;
+padding-left:10px;
+}
+
+.linklc div,
+.linkwd a {
+text-align:center;
+}
+
+.cby {
+text-align:center;
+}
+
+.cset {
+font:bold 280%/160% Arial;
+}
+
+.crte {
+font:bold 200%/160% Arial;
+}
+
+.cmn {
+border:2px solid #dddddd;
+border-radius:10px;
+display:inline-block;
+width:320px;
+margin:10px auto;
+padding:0;
+}
+
+.title {
+max-width:320px;
+}
+
+}
+
+/* Medium */
+@media screen and (min-width:480px) and (max-width:860px){
+
+body {
+background-color:#ffffff;
+}
+
+h1,
+h2 {
+font:bold 100%/160% sans-serif;
+}
+
+header,
+main,
+footer {
+box-sizing:border-box;
+padding-right:40px;
+padding-left:40px;
+}
+
+.linklc div,
+.linkwd a {
+text-align:center;
+}
+
+.cby {
+text-align:center;
+}
+
+.cset {
+font:bold 280%/160% Arial;
+}
+
+.crte {
+font:bold 200%/160% Arial;
+}
+
+.cmn {
+border:2px solid #dddddd;
+border-radius:10px;
+display:inline-block;
+width:320px;
+margin:10px auto;
+padding:0;
+}
+
+.title {
+width:320px;
+}
+
+}
+
+/* Large */
+@media screen and (min-width:860px){
+
+body {
+text-align:center;
+}
+
+h1 {
+font:bold 120%/160% sans-serif;
+}
+
+h2 {
+font:bold 115%/160% sans-serif;
+}
+
+main {
+display:inline-block;
+vertical-align:top;
+text-align:left;
+width:704px;
+height:540px;
+padding-right:20px;
+padding-left:20px;
+margin-top:20px;
+margin-bottom:20px;
+border:2px solid #dddddd;
+border-radius:10px;
+background-color:#ffffff;
+}
+
+.linklc div,
+.linkwd a {
+text-align:center;
+}
+
+.cby {
+text-align:center;
+}
+
+.cset {
+font:bold 320%/160% Arial;
+}
+
+.crte {
+font:bold 240%/160% Arial;
+}
+
+.cmn {
+border:2px solid #dddddd;
+border-radius:10px;
+display:inline-block;
+width:320px;
+margin:10px auto;
+padding:0;
+}
+
+.title {
+width:480px;
+}
+
+}
+/* End */
+</style>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IArs4c6QAAAAxQTFRF////9PT05ubm3t7etdxP3QAAAJBJREFUeNqtk0sSwCAIQyHv/nfupgoZK6tmI0zCV41fkQBw5WEUCMiIMTxmPmYe71Q3Xmz4eC06z5aXrR4nyDLXKc/rCfI9Wbqth+aLmgKsAuw2BE2wM6s7xlgncRfY4k5GyAZ0gacAuS7tQihDvjE2jk2GKaxQbWp6QqCBL895Jp+viDVtCr5qJh3jz1L8jAf7/wMAKAuPLgAAAABJRU5ErkJggg==" sizes="32x32">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADAAgMAAAAvsoSUAAAAAXNSR0IArs4c6QAAAAxQTFRF////9fX16enp3d3dU33ZxgAABblJREFUeNrtmrFu20gQhkWdJQNRYSdAdMCp0AOkyCOE1TXXqIhc+IrrpYKPYD4Ci7hPEReSgbCPC+YR7hFYqMj5gPMVPkAUbO7Fa2m/XY7WWLaBp5Ko/Tn//DszHK7debYfyeK43fredBEftFjf/6zUl/MW98/Vd6s/BQPmSludBa4fqq2VgYBkB7gNjLjYAe5aRKDtPmh9VBhAHQT4RbUDRLlqR6mvsHWIg0Rht+GabhYnS6X+DNHUJEU0W8TBmq4ePkbhmtbh1ZNsHWAhjOo0GDDSDqpOS0YfWzLatKh9Qg6zsQbELRi1dNDVDrJwwAhNwyyBUWAI7HKQvWrLaACjMHv7AEhdlp2nmn4hGb0+XS4/eGOWZX9683Bt4QEcil07LR7rz4MYUZvNpvzJu22VeAxp20w60g6KxhNkrrC/PJlnizo0hIhNbFvdYIht9m/bWj7n/C7OyAscPBVFwW2kAwR3Y46FRBjeaRj3wI1E//zteRr95sQ82olz/r43yxkLGiKVzefc9USnbA4nV6QUfto28WMO9As42SLVDUb1ByRAJ0SyAAXSWx3uY1OktcuonnRwSXGRSUQ1EkG+onxZwz7nkvKcK6iawlhU969KuY/txIr5Zxy4Ya88qr5xOyAX1+4NKj4TEJzcm3QthxGMGpxqdxtKuz9929tUYmcbUhSGkRSebykK41yQMItgXcCoGcStA+AH2/cBytu6nvGlr4hu+Pn6wr7pvYsmnIpuXJsk/90KLbK2YWw+R3Nat1aSOLuWAokJ4cW2UFO4phYgg52Kneb3H2rYgNRJAXoTRAoS/BBhftIxU3e6mI2UpRWPhV3ZjEjrdyhjAQa7yuqKIf8tWz3We2KIfNWuAGzp/qF97bBVM6vGCvu6vRerDJbiThRWNoknsNO1yoC5vAFwCOCM+HdJ3NXrs85JbmTqAyiU+pd9Wzmz0NADKEnD0tRdvOVbmXwQm97fZVVi7/g9AMMja6RkYVJisAdgco+sKjQjD4BkpUqK3TIo9XwA5MUDRPDF7dxcPtoLqAFUu2xJTWZWAIw05O3dFlk3E40aJUn49YX6JgBqDyAxeTvPSLTH8HsAqB+qKraa3MrnAYDbhEvUN0oDWMlBCgCb7/FAOvoBpZw2Uz/gnQCMyCA7HytPDLQR9lcD7kQ7kDMCYg7oMmMBIM8BHDmAtVB1TepDyQOgOaMNQZPe2BEPp5EL4C5iPM1IW7GKwBBJpV4Am8NMzYVEAshIMkl0YLceosZoN0LVaNuBIU6bxXJEojAAMHUYh3js8rEPIEq29GCkUgAZH93kRFS+HhosWlIv0GZP6Y8A5BDuPJtrAIrBhnv2mGCZ2mg4sKDR6pjRr2IRvPWQzdsogustZFFmp+fmmIFsDVcdDg9FRjulLiadnl7PnZhbeXpwWKGul1dmMOF6yf5o2gxiWCWHZxok+YatWIM3Sh8xmffkKwlFzfQpGEWmP1Fy/IRlzf5EIlp1Lx3Qn5g9U8HJfcNAVUofTjjALXDKlSNR3rnFhM2T0tjLS8Vhv3gbpkdh/bx5TNSHIG8f2MHw8urLedzoT7f2d/GqN9VvP1BAJFn6vqMhJCDZpfE7FHgXlQZlRCK1/JaQSdQcLjH5+o2unoN3sisTJP1BvKG4bV0rL6OcmMXxkveYlJjJxtIrqvwx4kxNWk6LFVvj2WZEd69mfkbrgL1BI0JwiUq/9IR0v+PM56DyhOa5TrXZVriceHBL1+SfDHtIT27agJM6rJfLo03SSR4PH5/SMqUl0vmw8DBCWPSAkC/x+zRU1sPIk5XEHfculeKKn5O6fq+/neSck3vsZaG01cuL6WyplN+BPPjVUL8DzuaEoakn9aWtwv4mGhABymIc6/o4DRUm0s4jVBghhIKUlSchcQf/lf141mI9p3WaPwI9DYhmVzdKXS0mnVA7fj2dTScRFwKcdOLnf/d4tv8B98oDpDTHL4IAAAAASUVORK5CYII=" sizes="192x192">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAAAAXNSR0IArs4c6QAAAAxQTFRF////9vb26enp3t7eZfVEXQAABNpJREFUeNrtnVuOpDAQBB3h+995tU9GYmZsKg0LEvlNi1B2YrsKA+3Vq1evXr26t/in9lM8AVi1/5IKwO2B+07qfbmxfynljsTYv9UNqbWP5IOCsYkbIj/JauiT8jk2b/JGyA+DRvsBcf+R2W7AfDmyAEBjm9eVG4dZ4NMV331tlva0lZE8j5l2W8GXyXhtXigIkG/lsw9kfpFXi8clo+EDbTa2+XrZd+LmzPA8m9syZp7IDIAAAlzLHLRTN6kC1zBL3k7dpHDBYMfyol1ZzJz4DNpn5MIRlP0AfV5jRE4KtIHJVzV0KPuMvSJdz0zQY7goJFhk1l6XstJoppEzCcuYDZCvygiWmEc4XVXUsdk5M7HNAtDYVk/o0mSzY07GDAWOrUskrlUIbFYozENyAXMSTzSk3iNYZpbZciWn9uCPMZ6UwYyag+FwzU04TKgPhmNVX5KkTOLQ0g4HyJHZcIrRg4ZZTF0xWpKGWR4RKRjN1Q0zKFjNkXAY2Bz81QOOuPmUey2B0UFTJPOaY0bL4NjU5pxib57LmAFEADg68g2hZyka7JgnF586Bqc8VRjUNoPlskLB6vQKmGTWQSGYW03ZaCqVrjCHMp0OiWsb7QPJHMu00Wnhi1GPgwo0YW2DYa90EsZZaByelz4rqvnYo0i05CbugsEc9I5kymgJG9RMnIU4HbtwhE11CvnI0uEkswKoJ0Inc6zfTduAzqV6BrqUDiv1DOjB+TSB3htdu/kIjn30YIRmoZ1hLiYWC7kvDjIumzs8liDq0Mwxs4OODymkY1CxRU7n0DsfB6eqQzOG7ptMoHGGmWB2Ca/D74+wZStKCtBhFjUskhhAR9fhXqCSVqO4CrrNHEcbyWAoj6GL4gbQebOuhJRDrze6rYPuH7TO6NxpZ6FZYbTMjDBZb8QAelBjZrP47Bk90+hmAD04MGCO14EYQq/fLtCPQTMLTbxph7kDCaDzUGOl19uTUSGHtvdCO9QAep81MmYH6cihc6uhl4zuxNDMWp0ws4t0CG2yZWfprRSL98Q95/kCg5l+HbWHmNvckViFpraFzaCGHM0uYx+kEI0Bs8ehO+H6YXx7XFbc78ZgAyHxJrix0fmcwRwEYP9MHLAkWL6NqG0McjHNTO2ClcJoIMBmsVrb9M/A6KD643OevwoeVODI0RaGsYJsLTA6yEdADa1gdJCPnFrO3L3tKdQQlGNBPgJqyereMYKr3y4mQVMkWMQGZlP652gtsDp7/lCo1b3Hf8Sah1MFWs68vvwDtEAchCOyesNGtfAIfsrcMGnF0AAEaDTyRyArVtsuE836tnf+EzUj5qBquIzZ5Ofchjmf/dczh2f1amoHzEGz/mKfQ6s7F79r1HMfz88FPWAOHhYKhMuYCahDm7ssc8BTqA2YF79jJykeXJ02OSHNOXNOnZVonOKF3P+9nebU+etRc+ocG1PmSkNXibM840XudY7NZnJgc5RACWIRMGfUXVj1qjG58D3ZM9ywEYc259gbN3xJC6ppMzWn3kvljxqtwYZr0LLORWMAoN1/6hp02dcJ6IEC5EjgWmTaFQJv4HIS7dzkJ2FLo10vTYgDpXZ7f+L8onQ9cXWlaQ58vRiBK7Sbid/gv9H9yKoiPOO7iALtKR9H3Ch5v2z56tWrV68eqR9fnGEU3CZ5qgAAAABJRU5ErkJggg==" sizes="180x180">
+<script>
+// Execute function before page display
+window.addEventListener('DOMContentLoaded',function(){
+
+action();
+clock();
+monset();
+sc();
+dp();
+
+setInterval('auto();',1000);
+
+});
+
+// Run in page view
+window.addEventListener('pageshow',function(){
+
+clock();
+monset();
+sc();
+dp();
+input();
+
+});
+
+// dp function
+function dp(){
+
+let tbsa = document.getElementById("tbsa");
+let tbsb = document.getElementById("tbsb");
+let tbsc = document.getElementById("tbsc");
+let tbsd = document.getElementById("tbsd");
+
+tbsa.addEventListener('click', tbsamv);
+tbsb.addEventListener('click', tbsbmv);
+tbsc.addEventListener('click', tbscmv);
+tbsd.addEventListener('click', tbsdmv);
+
+if(!tbva.value){
+tbva.value = "0";
+}
+else {
+;
+}
+
+let tbst;
+tbst = tbva.value;
+
+if(tbst === "0"){
+optb(event, 'flag0');
+let tbdf;
+tbdf = document.getElementsByClassName("tablinks");
+tbdf[0].className = tbdf[0].className.replace("inact0", "inact0 active");
+}
+else if(tbst === "1"){
+optb(event, 'flag1');
+let tbdf;
+tbdf = document.getElementsByClassName("tablinks");
+tbdf[1].className = tbdf[1].className.replace("inact1", "inact1 active");
+}
+else if(tbst === "2"){
+optb(event, 'flag2');
+let tbdf;
+tbdf = document.getElementsByClassName("tablinks");
+tbdf[2].className = tbdf[2].className.replace("inact2", "inact2 active");
+}
+else if(tbst === "3"){
+optb(event, 'flag3');
+let tbdf;
+tbdf = document.getElementsByClassName("tablinks");
+tbdf[3].className = tbdf[3].className.replace("inact3", "inact3 active");
+}
+else{
+;
+}
+
+function tbsamv(){
+tbva.value = "0";
+}
+
+function tbsbmv(){
+tbva.value = "1";
+}
+
+function tbscmv(){
+tbva.value = "2";
+}
+
+function tbsdmv(){
+tbva.value = "3";
+}
+
+}
+
+function optb(evt, name){
+var i, panel, tablinks;
+panel = document.getElementsByClassName("panel");
+for (i = 0; i < panel.length; i++) {
+panel[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(name).style.display = "block";
+evt.currentTarget.className += " active";
+}
+
+// auto function
+function auto(){
+const just  = new Date();
+let jh = just.getHours();
+let jm  = just.getMinutes();
+let js  = just.getSeconds();
+
+// Clock processing
+clock();
+
+// Calendar processing
+if(jh === 0 && jm === 0 && js === 0) {
+monset();
+}
+
+// Screen size processing
+sc();
+
+}
+
+// clock function
+function clock(){
+
+// Real time information
+let myDay = new Array("Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat.");
+let now  = new Date();
+let year = now.getFullYear();
+let month = now.getMonth()+1;
+let date = now.getDate();
+let day = now.getDay();
+let hour = now.getHours();
+let min  = now.getMinutes();
+
+// Display numbers in 2 digits
+	if(min < 10) {
+	min = "0" + min;
+	}
+
+// Format
+let txthmv = document.getElementById("homev").textContent;
+let home1 = hour + ':' + min;
+let home2 = year + '.' + month + '.' + date + '.' + myDay[day];
+let homev = home1 + '&nbsp;/&nbsp;' + home2;
+
+if(txthmv === homev){
+;
+}
+else{
+document.getElementById('homev').innerHTML= homev.toLocaleString();
+document.getElementById('clock1').innerHTML= home1.toLocaleString();
+
+// Canvas processing
+cnvset();
+
+}
+
+}
+
+// cnvset function
+function cnvset(){
+let now  = new Date();
+let hour = now.getHours();
+let min  = now.getMinutes();
+
+// Canvas
+let canvas = document.getElementById('clock3');
+let ctx = canvas.getContext('2d');
+
+// Set value
+canvas.width = 240;
+canvas.height = 280;
+ctx.clearRect(0,0,canvas.width,canvas.height);
+let x = '';
+let y = '';
+let w = canvas.width;
+let h = canvas.height;
+let center = {
+x : w / 2, y : h / 2
+}
+let color = "#bbbbbb";
+
+//  Move center
+ctx.translate(center.x,center.y);
+
+// Min
+ctx.strokeStyle = color;
+ctx.lineWidth = 2;
+ctx.beginPath();
+    for (let i=0;i<60;i++){
+        if (i%5!=0) {
+        ctx.moveTo(100,0);
+        ctx.lineTo(95,0);
+        }
+    ctx.rotate(Math.PI/30);
+    }
+ctx.stroke();
+
+// Time
+ctx.strokeStyle = color;
+ctx.lineWidth = 3;
+ctx.beginPath();
+    for (let i=0;i<60;i++){
+    ctx.moveTo(100,0);
+    ctx.lineTo(90,0);
+    ctx.rotate(Math.PI/6);
+    }
+ctx.stroke();
+ctx.restore();
+ctx.save();
+
+// Clock hands
+let hr= hour;
+hr = hr >= 12 ? hr - 12 : hr;
+ctx.fillStyle = color;
+
+// Hour hand
+ctx.rotate(hr*(Math.PI/6) + (Math.PI/360)*min);
+ctx.lineWidth = 8;
+ctx.strokeStyle = color;
+ctx.beginPath();
+ctx.moveTo(-2,25);
+ctx.lineTo(0,-70);
+ctx.lineTo(2,25);
+ctx.stroke();
+ctx.restore();
+
+// Long hand
+ctx.rotate( (Math.PI/30)*min);
+ctx.lineWidth = 4;
+ctx.strokeStyle = color;
+ctx.beginPath();
+ctx.moveTo(-2,25);
+ctx.lineTo(0,-105);
+ctx.lineTo(2,25);
+ctx.stroke();
+ctx.restore();
+
+// Center of the clock
+ctx.beginPath();
+ctx.lineWidth = 3;
+ctx.strokeStyle = color;
+ctx.fillStyle = color;
+ctx.arc(0,0,7,0,Math.PI*2,true);
+ctx.stroke();
+ctx.fill();
+ctx.restore();
+ctx.save();
+
+}
+
+// monset function
+function monset(){
+
+// Calendar settings
+const weeks = new Array("Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat.");
+const date = new Date();
+let year = date.getFullYear();
+let month = date.getMonth() + 1;
+const ndat = date.getDate();
+const day = date.getDay();
+const tyer = year;
+const tmth = month;
+
+function showCalendar(year, month) {
+const calendarHtml = createCalendar(year, month);
+document.getElementById('calendar').innerHTML = calendarHtml;
+}
+
+function createCalendar(year, month) {
+const startDate = new Date(year, month - 1, 1);
+const endDate = new Date(year, month,  0);
+const endDayCount = endDate.getDate();
+const lastMonthEndDate = new Date(year, month - 1, 0);
+const lastMonthendDayCount = lastMonthEndDate.getDate();
+const startDay = startDate.getDay();
+let dayCount = 1;
+let calendarHtml = '';
+
+calendarHtml += '<div class="crte">' + year  + '.' + month + '</div>';
+calendarHtml += '<div class="tset"><table>';
+// Day of the week row
+	for (let i = 0; i < weeks.length; i++) {
+	calendarHtml += '<td class="weeks">' + weeks[i] + '</td>';
+	}
+	for (let w = 0; w < 6; w++) {
+	calendarHtml += '<tr>';
+		for (let d = 0; d < 7; d++) {
+			if (w == 0 && d < startDay) {
+			let num = lastMonthendDayCount - startDay + d + 1;
+			calendarHtml += '<td class="is-disabled">' + num + '</td>';
+			} else if (dayCount > endDayCount) {
+			let num = dayCount - endDayCount;
+			calendarHtml += '<td class="is-disabled">' + num + '</td>';
+			dayCount++;
+			} else if (dayCount === ndat && month === tmth && year === tyer) {
+			calendarHtml += '<td class="today">' + dayCount + '</td>';
+			dayCount++;
+			} else {
+			calendarHtml += '<td>' + dayCount + '</td>';
+			dayCount++;
+			}
+		}
+	calendarHtml += '</tr>';
+	}
+calendarHtml += '</table></div>';
+
+return calendarHtml;
+}
+
+document.querySelector('#prev').addEventListener('click', moveCalendar);
+document.querySelector('#next').addEventListener('click', moveCalendar);
+document.querySelector('#ypv').addEventListener('click', moveCalendar);
+document.querySelector('#ynt').addEventListener('click', moveCalendar);
+document.querySelector('#reset').addEventListener('click', moveCalendar);
+
+if (!yeva.value){
+;
+}
+else {
+year = yeva.value;
+}
+
+if (!mova.value){
+;
+}
+else {
+month = mova.value;
+}
+
+showCalendar(year, month);
+
+function moveCalendar(e) {
+	if (e.target.id === 'prev') {
+	month--;
+		if (month < 1) {
+		year--;
+		month = 12;
+		}
+	}
+	if (e.target.id === 'next') {
+	month++;
+		if (month > 12) {
+		year++;
+		month = 1;
+		}
+	}
+	if (e.target.id === 'ypv') {
+	year--;
+	}
+	if (e.target.id === 'ynt') {
+	year++;
+	}
+	if (e.target.id === 'reset') {
+	year = tyer;
+	month = tmth;
+	}
+showCalendar(year, month);
+yeva.value = year;
+mova.value = month;
+}
+
+}
+
+// action function
+function action(){
+
+let bunv = document.getElementById('btnv');
+let bude = document.getElementById('btde');
+let scev = document.getElementById('srck');
+
+bunv.addEventListener('click', btcknv);
+bude.addEventListener('click', btckde);
+
+scev.elements[0].checked = true;
+
+document.addEventListener('keydown', (e) => {
+if (e.key == "Enter") {
+btcknv();
+}
+});
+
+let defurl = '';
+document.getElementById("url").value = defurl;
+document.getElementById("ck").innerHTML = "Not entered.";
+
+input();
+
+function btcknv(){
+
+const encd = document.getElementById("url").value;
+const urlptc = encodeURIComponent(encd);
+
+if(urlptc === ""){
+
+if(scev.elements[0].checked === true){
+location.href = 'https://www.google.com/';
+}
+else if(scev.elements[1].checked === true){
+location.href = 'https://www.w3.org/developers/tools/';
+}
+else if(scev.elements[2].checked === true){
+location.href = 'https://www.deepl.com/';
+}
+else if(scev.elements[3].checked === true){
+location.href = 'https://iask.ai/';
+}
+else{
+;
+}
+
+}
+else {
+
+if(scev.elements[0].checked === true){
+let gourl;
+let urlrpc;
+if(urlptc.match(/,w$/gi)){
+urlrpc = urlptc.replace(",w", "");
+gourl = 'https://www.google.com/search?q=' + urlrpc + ' weather';
+}
+else if(urlptc.match(/,n$/gi)){
+urlrpc = urlptc.replace(",n", "");
+gourl = 'https://www.google.com/search?q=' + urlrpc + '&tbm=nws';
+}
+else if(urlptc.match(/,i$/gi)){
+urlrpc = urlptc.replace(",i", "");
+gourl = 'https://www.google.com/search?q=' + urlrpc + '&udm=2';
+}
+else if(urlptc.match(/,v$/gi)){
+urlrpc = urlptc.replace(",v", "");
+gourl = 'https://www.google.com/search?q=' + urlrpc + '&udm=7';
+}
+else{
+gourl = 'https://www.google.com/search?q=' + urlptc;
+}
+location.href = gourl;
+}
+else if(scev.elements[1].checked === true){
+
+if (urlptc.startsWith("http") !== false){
+urlfch = urlptc;
+}
+else if (urlptc.startsWith("https") !== false){
+urlfch = urlptc;
+}
+else{
+urlfch = "https%3A%2F%2F" + urlptc;
+}
+
+if(urlfch.match(/css$/gi)){
+let scurl = 'https://jigsaw.w3.org/css-validator/validator?uri=' + urlfch;
+location.href = scurl;
+}
+else {
+let scurl = 'https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=' + urlfch;
+location.href = scurl;
+}
+
+}
+else if(scev.elements[2].checked === true){
+let urldet = urlptc.replace(/%2F/g, "-");
+let dpurl;
+if(urldet.match(/[^\x01-\x7E\xA1-\xDF]+/)){
+dpurl = 'https://www.deepl.com/ja/translator#ja/en-us/' + urldet;
+}
+else{
+dpurl = 'https://www.deepl.com/en/translator#en/ja/' + urldet;
+}
+location.href = dpurl;
+}
+else if(scev.elements[3].checked === true){
+urlfch = "question:" + urlptc;
+let akurl = 'https://iask.ai/?mode=question&q=' + urlfch;
+location.href = akurl;
+}
+else if(scev.elements[4].checked === true){
+let wturl = 'https://www.google.com/search?q=' + urlptc + ' weather';
+location.href = wturl;
+}
+else if(scev.elements[5].checked === true){
+let nsurl = 'https://www.google.com/search?q=' + urlptc + '&tbm=nws';
+location.href = nsurl;
+}
+else if(scev.elements[6].checked === true){
+let igurl = 'https://www.google.com/search?q=' + urlptc + '&udm=2';
+location.href = igurl;
+}
+else if(scev.elements[7].checked === true){
+let vdurl = 'https://www.google.com/search?q=' + urlptc + '&udm=7';
+location.href = vdurl;
+}
+else{
+;
+}
+
+}
+
+}
+
+function btckde(){
+
+document.getElementById("url").value = defurl;
+document.getElementById("ck").innerHTML = "Not entered.";
+vcva.value = "";
+
+}
+
+}
+
+function vcst(){
+
+vcva.value = "";
+
+}
+
+function input(){
+
+if(vcva.value === "0"){
+document.getElementById("ck").innerHTML = "Text cut complete.";
+}
+else if(vcva.value === "1"){
+document.getElementById("ck").innerHTML = "Text copied complete.";
+}
+else if(vcva.value === "2"){
+document.getElementById("ck").innerHTML = "Text pasted complete.";
+}
+else{
+
+let kydt = document.getElementById("url").value;
+if(kydt === ""){
+document.getElementById("ck").innerHTML = "Not entered.";
+}
+else{
+document.getElementById("ck").innerHTML = "Input in progress.";
+}
+
+}
+
+url.addEventListener('cut',function(){
+
+let txtct = document.getElementById("ck").textContent;
+if(txtct === "Text cut complete."){
+;
+}
+else{
+document.getElementById("ck").innerHTML = "Text cut complete.";
+vcva.value = "0";
+}
+
+});
+
+url.addEventListener('copy',function(){
+
+let txtcp = document.getElementById("ck").textContent;
+if(txtcp === "Text copied complete."){
+;
+}
+else{
+document.getElementById("ck").innerHTML = "Text copied complete.";
+vcva.value = "1";
+}
+
+});
+
+url.addEventListener('paste',function(){
+
+let txtps = document.getElementById("ck").textContent;
+if(txtps === "Text pasted complete."){
+;
+}
+else{
+document.getElementById("ck").innerHTML = "Text pasted complete.";
+vcva.value = "2";
+}
+
+});
+
+}
+
+// sc function
+function sc(){
+
+// Screen size
+let info = document.getElementById('info');
+let txtif = document.getElementById("info").textContent;
+let sw = screen.width;
+let sh = screen.height;
+let vw = window.innerWidth;
+let vh = window.innerHeight;
+let ap = "&nbsp;:&nbsp;";
+let sp = "&nbsp;/&nbsp;";
+let ifset = sw + ap + sh + sp + vw + ap + vh;
+
+if (txtif === ifset){
+;
+}
+else{
+info.innerHTML = ifset.toLocaleString();
+}
+
+}
+</script>
+</head>
+
+<body>
+
+<header id="top">
+
+</header>
+
+<main>
+
+<article>
+
+<h1 id="homev">Web View</h1>
+<div class="tabpanel">
+
+<div id="tabset" class="tab tabgroup">
+<div class="tbwp">
+<div id="tbsa" class="tablinks inact0" onclick="optb(event, 'flag0')">Main</div>
+<div id="tbsb" class="tablinks inact1" onclick="optb(event, 'flag1')">Favo</div>
+</div>
+<div class="tbwp">
+<div id="tbsc" class="tablinks inact2" onclick="optb(event, 'flag2')">Time</div>
+<div id="tbsd" class="tablinks inact3" onclick="optb(event, 'flag3')">Date</div>
+</div>
+</div>
+<input style="display:none;" id="tbva" name="tbva" type="text">
+
+<div class="panelgroup">
+
+<div id="flag0" class="panel">
+
+<form class="srck" id="srck">
+<div class="srbx">
+<input type="radio" name="srva" id="google" value="google"><label for="google" class="rlab">Google</label>
+<input type="radio" name="srva" id="source" value="source"><label for="source" class="rlab">Markup</label>
+</div>
+<div class="srbx">
+<input type="radio" name="srva" id="deepl" value="deepl"><label for="deepl" class="rlab">DeepL</label>
+<input type="radio" name="srva" id="iask" value="iask"><label for="iask" class="rlab">iAsk</label>
+</div>
+<div class="srbx">
+<input type="radio" name="srva" id="weather" value="weather"><label for="weather" class="rlab">Weather</label>
+<input type="radio" name="srva" id="news" value="news"><label for="news" class="rlab">News</label>
+</div>
+<div class="srbx">
+<input type="radio" name="srva" id="image" value="image"><label for="image" class="rlab">Image</label>
+<input type="radio" name="srva" id="video" value="video"><label for="video" class="rlab">Video</label>
+</div>
+</form>
+<div class="bxcr">
+<div>
+<input class="title" id="url" name="url" type="text" onkeyup="vcst(), input();" placeholder="Enter">
+</div>
+<div>
+<label class="btnv"><input id="btnv" value="btnv" type="button">Search</label><label class="btnv"><input id="btde" value="btde" type="button">Delete</label>
+</div>
+</div>
+<div>
+<div class="ck" id="ck">Loading...</div>
+<input style="display:none;" id="vcva" name="vcva" type="text">
+</div>
+<div>
+<div id="info" class="info">Info</div>
+</div>
+
+</div>
+
+<div id="flag1" class="panel">
+
+<div class="mtsp">
+<div class="linkwd">
+<a href="https://www.cloudflare.com/">Flare</a>
+<a href="https://www.amazon.co.jp/">Amazon</a>
+</div>
+<div class="linkwd">
+<a href="https://www.wise.com/">Wise</a>
+<a href="https://www.sync.com/">Sync</a>
+</div>
+</div>
+<div class="lcsp">
+<div class="linkwd">
+<a href="https://www.box.com/">Box</a>
+<a href="https://www.mediafire.com/">Fire</a>
+</div>
+<div class="linkwd">
+<a href="https://www.icedrive.net/">Icedrive</a>
+<a href="https://www.pcloud.com/">Pcloud</a>
+</div>
+</div>
+<div class="mnsp">
+<div class="linkwd">
+<a href="https://coinmarketcap.com/">MCap</a>
+<a href="https://www.coingecko.com/">Gecho</a>
+</div>
+<div class="linkwd">
+<a href="https://zycrypto.com/category/sponsored/">ZYCrypto</a>
+<a href="https://techpoint.africa/crypto/">TechAf</a>
+</div>
+</div>
+<div class="lcsp">
+<div class="linkwd">
+<a href="https://bitcoinist.com/category/altcoin-news/">BCoinist</a>
+<a href="https://cryptonomist.ch/categoria/criptovalute/">Nomist</a>
+</div>
+<div class="linkwd">
+<a href="https://www.thecoinrepublic.com/">TCRepub</a>
+<a href="https://www.crypto-news-flash.com/">CNFlash</a>
+</div>
+</div>
+
+</div>
+
+<div id="flag2" class="panel">
+
+<div class="cby">
+<div class="cmn">
+<div class="cset" id="clock1"></div>
+<canvas id="clock3" width="240" height="280"></canvas>
+</div>
+</div>
+
+</div>
+
+<div id="flag3" class="panel">
+
+<div class="cby">
+<div class="cmn crby">
+<div id="calendar"></div>
+<div class="bset"><button id="ypv" type="button">&lt;&lt;</button><button id="prev" type="button">&lt;</button><button id="reset" type="button">Reset</button><button id="next" type="button">&gt;</button><button id="ynt" type="button">&gt;&gt;</button></div>
+<input style="display:none" id="yeva" name="yeva" type="text">
+<input style="display:none" id="mova" name="mova" type="text">
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</article>
+
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
